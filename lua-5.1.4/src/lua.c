@@ -334,6 +334,10 @@ struct Smain {
   int argc;
   char **argv;
   int status;
+  /*
+    TODO 关于char **类型，这里有篇文章讲解的很好
+    http://blog.csdn.net/daiyutage/article/details/8604720
+   */
 };
 
 
@@ -373,13 +377,19 @@ static int pmain (lua_State *L) {
   return 0;
 }
 
-
+/*
+  lua 源码里面的main入口之一
+  另外一个入口在luac.c里面
+ */
 int main (int argc, char **argv) {
   int status;
   struct Smain s;
   lua_State *L = lua_open();  /* create state */
+  // lua_open 既是 luaL_newstate 注意是luaL
+  // #define lua_open()	luaL_newstate() //定义在lua.h中
   if (L == NULL) {
     l_message(argv[0], "cannot create state: not enough memory");
+    // 向 stderr 打印错误
     return EXIT_FAILURE;
   }
   s.argc = argc;
@@ -388,5 +398,9 @@ int main (int argc, char **argv) {
   report(L, status);
   lua_close(L);
   return (status || s.status) ? EXIT_FAILURE : EXIT_SUCCESS;
+  /*
+    关于EXIT_FAILURE EXIT_SUCCESS 定义在 stdlib.h里面
+    EXIT_SUCCESS=0 EXIT_FAILURE=1
+   */
 }
 

@@ -183,6 +183,12 @@ static int pmain(lua_State* L)
  return 0;
 }
 
+/*
+  lua里面的main入口之二
+  TODO 需要搞懂这个文件是做什么的
+  参考资料:
+  https://www.lua.org/manual/5.1/luac.html
+ */
 int main(int argc, char* argv[])
 {
  lua_State* L;
