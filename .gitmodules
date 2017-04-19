@@ -1,3 +1,6 @@
 [submodule "LuaVMRead"]
 	path = LuaVMRead
 	url = git@github.com:middlefeng/LuaVMRead.git
+[submodule "Lua-Source-Internal"]
+	path = Lua-Source-Internal
+	url = git@github.com:lichuang/Lua-Source-Internal.git
