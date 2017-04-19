@@ -1,0 +1,3 @@
+[submodule "LuaVMRead"]
+	path = LuaVMRead
+	url = git@github.com:middlefeng/LuaVMRead.git
