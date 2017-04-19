@@ -38,17 +38,19 @@
 		D51E07A81E8EA4510077C6C7 /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = D51E07841E8EA4510077C6C7 /* lvm.c */; };
 		D51E07A91E8EA4510077C6C7 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = D51E07861E8EA4510077C6C7 /* lzio.c */; };
 		D51E07AB1E8EA4510077C6C7 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = D51E07891E8EA4510077C6C7 /* print.c */; };
+		D58EE15B1EA75258001704BF /* hello.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = D58EE15A1EA75227001704BF /* hello.lua */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D51E07421E8EA40C0077C6C7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				D58EE15B1EA75258001704BF /* hello.lua in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -113,6 +115,7 @@
 		D51E07871E8EA4510077C6C7 /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lzio.h; sourceTree = "<group>"; };
 		D51E07881E8EA4510077C6C7 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D51E07891E8EA4510077C6C7 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = print.c; sourceTree = "<group>"; };
+		D58EE15A1EA75227001704BF /* hello.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 				D51E074E1E8EA4510077C6C7 /* src */,
 				D51E07461E8EA40C0077C6C7 /* lua514 */,
 				D51E07451E8EA40C0077C6C7 /* Products */,
+				D58EE15A1EA75227001704BF /* hello.lua */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,6 +437,7 @@
 				D51E074D1E8EA40C0077C6C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
