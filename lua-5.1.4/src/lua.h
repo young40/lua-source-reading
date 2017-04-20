@@ -68,18 +68,19 @@ typedef void * (*lua_Alloc) (void *ud, void *ptr, size_t osize, size_t nsize);
 
 /*
 ** basic types
+** 基本数据类型
 */
-#define LUA_TNONE		(-1)
+#define LUA_TNONE           (-1) // none
 
-#define LUA_TNIL		0
-#define LUA_TBOOLEAN		1
-#define LUA_TLIGHTUSERDATA	2
-#define LUA_TNUMBER		3
-#define LUA_TSTRING		4
-#define LUA_TTABLE		5
-#define LUA_TFUNCTION		6
-#define LUA_TUSERDATA		7
-#define LUA_TTHREAD		8
+#define LUA_TNIL            0 // nil
+#define LUA_TBOOLEAN		1 // bool
+#define LUA_TLIGHTUSERDATA	2 // light userdata
+#define LUA_TNUMBER		    3 // number
+#define LUA_TSTRING		    4 // string
+#define LUA_TTABLE		    5 // table
+#define LUA_TFUNCTION		6 // function
+#define LUA_TUSERDATA		7 // userdata
+#define LUA_TTHREAD		    8 // thread
 
 
 
