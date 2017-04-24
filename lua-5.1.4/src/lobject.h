@@ -69,6 +69,9 @@ typedef union {
 */
 
 #define TValuefields	Value value; int tt
+/* 
+ int tt 是TValuefields的数据类型, ttype()返回tt
+ */
 
 typedef struct lua_TValue {
   TValuefields;
@@ -87,7 +90,7 @@ typedef struct lua_TValue {
 #define ttislightuserdata(o)	(ttype(o) == LUA_TLIGHTUSERDATA)
 
 /* Macros to access values */
-#define ttype(o)	((o)->tt)
+#define ttype(o)	((o)->tt) // 返回对象类型
 #define gcvalue(o)	check_exp(iscollectable(o), (o)->value.gc)
 #define pvalue(o)	check_exp(ttislightuserdata(o), (o)->value.p)
 #define nvalue(o)	check_exp(ttisnumber(o), (o)->value.n)

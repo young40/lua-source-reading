@@ -81,7 +81,7 @@ typedef void * (*lua_Alloc) (void *ud, void *ptr, size_t osize, size_t nsize);
 #define LUA_TFUNCTION		6 // function
 #define LUA_TUSERDATA		7 // userdata
 #define LUA_TTHREAD		    8 // thread
-
+//类型>=4(LUA_TSTRING)为可gc的类型, 详见 iscollectable()
 
 
 /* minimum Lua stack available to a C function */

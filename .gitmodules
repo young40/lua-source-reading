@@ -4,3 +4,6 @@
 [submodule "Lua-Source-Internal"]
 	path = Lua-Source-Internal
 	url = git@github.com:lichuang/Lua-Source-Internal.git
+[submodule "lua-5.1.5"]
+	path = lua-5.1.5
+	url = git@github.com:zgpxgame/lua-5.1.5.git
