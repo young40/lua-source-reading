@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>simplelua.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D50BAAB91EB210290028AF98</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D51E07431E8EA40C0077C6C7</key>
 		<dict>
 			<key>primary</key>

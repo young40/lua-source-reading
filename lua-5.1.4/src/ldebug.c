@@ -501,7 +501,7 @@ static const char *getobjname (lua_State *L, CallInfo *ci, int stackpos,
     int pc = currentpc(L, ci);
     Instruction i;
     *name = luaF_getlocalname(p, stackpos+1, pc);
-    if (*name)  /* is a local? */
+    if (*name)  /* i  s a local? */
       return "local";
     i = symbexec(p, pc, stackpos);  /* try symbolic execution */
     lua_assert(pc != -1);
